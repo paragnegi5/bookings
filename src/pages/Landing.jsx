@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 import { useNavigate } from "react-router-dom";
