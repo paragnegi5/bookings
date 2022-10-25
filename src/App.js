@@ -12,8 +12,9 @@ import Pagenotfound from "./pages/404";
 
 function App() {
   let loggedin = JSON.parse(localStorage.getItem("loggedin"));
-  const [isloggedin, setIsloggedin] = useState(loggedin?.["isloggedin"]);
-  console.log(loggedin.isloggedin);
+  const [isloggedin, setIsloggedin] = useState(
+    loggedin ? loggedin["isloggedin"] : false
+  );
   return (
     <div className="App">
       <Router>
