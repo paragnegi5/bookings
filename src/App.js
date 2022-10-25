@@ -12,7 +12,7 @@ import Pagenotfound from "./pages/404";
 
 function App() {
   let loggedin = JSON.parse(localStorage.getItem("loggedin"));
-  const [isloggedin, setIsloggedin] = useState(loggedin["isloggedin"]);
+  const [isloggedin, setIsloggedin] = useState(loggedin?.["isloggedin"]);
   console.log(loggedin.isloggedin);
   return (
     <div className="App">
