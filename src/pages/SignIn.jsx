@@ -16,9 +16,7 @@ function SignIn({ setIsloggedin }) {
     } else {
       let users = JSON.parse(localStorage.getItem("users"));
       let validuser = users.filter((e) => {
-        if (e.empid === empid) {
-          return e;
-        }
+        return e.empid === empid;
       });
       if (validuser.length === 0) {
         alert("Invalid ID or Password");
